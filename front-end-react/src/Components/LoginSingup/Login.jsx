@@ -3,7 +3,7 @@ import './LoginSignup.css';
 import user_icon from '../Assets/person.png';
 import password_icon from '../Assets/password.png';
 
-const Login = ({ onSwitch }) => {
+const Login = ({ onSwitch , onBack }) => {
   return (
     <div className="container">
       <div className="header">
@@ -25,6 +25,7 @@ const Login = ({ onSwitch }) => {
       <div className="submit-container">
         <button className="submit">Login</button>
         <p>Don't have an account? <span className="link" onClick={onSwitch}>Register</span></p>
+        <button className="home-button" onClick={onBack}>← Back to Home</button>
       </div>
     </div>
   );

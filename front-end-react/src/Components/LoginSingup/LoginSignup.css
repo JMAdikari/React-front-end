@@ -84,4 +84,20 @@
     color: #007bff; 
   }
   
+  .home-button {
+    margin-top: 20px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .home-button:hover {
+    background-color: #5a6268;
+  }
+  
   

@@ -4,7 +4,7 @@ import user_icon from '../Assets/person.png';
 import email_icon from '../Assets/email.png';
 import password_icon from '../Assets/password.png';
 
-const Register = ({ onSwitch }) => {
+const Register = ({ onSwitch, onBack }) => {
   return (
     <div className="container">
       <div className="header">
@@ -30,6 +30,7 @@ const Register = ({ onSwitch }) => {
       <div className="submit-container">
         <button className="submit">Register</button>
         <p>Already have an account? <span className="link" onClick={onSwitch}>Login</span></p>
+        <button className="home-button" onClick={onBack}>← Back to Home</button>
       </div>
     </div>
   );
